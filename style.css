@@ -1,0 +1,95 @@
+body{
+    color:  rgb(15, 20, 25);
+    background-color: white;    
+}
+
+.nav{
+    width: 200px;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.nav a{
+    padding: 5px;
+    display: block;
+    color: rgb(15, 20, 25);
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.nav a:hover, .nav a:focus{
+    background-color: rgba(15, 25, 20, 0.1);
+    border-radius: 10px;
+}
+
+.estatis{
+    margin-left: 20px;
+}
+
+.publi{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.publi a{
+    padding: 5px;
+    color: rgb(15, 20, 25);
+    text-decoration: none;
+}
+
+.publi a:hover, .publi a:focus{
+    background-color: rgba(15, 25, 20, 0.1);
+    border-radius: 10px;
+}
+
+.estatis a > .text{
+    color: rgb(83, 100, 113);
+}
+
+.estatis a > .num{
+    color: rgb(15, 20, 25);
+    font-weight: bold;
+}
+
+.estatis a{
+    margin: 5px;
+    text-decoration: none;
+}
+.estatis a:hover, .estatis a:focus{
+    text-decoration: underline;
+}
+
+.actions{
+    padding: 10px;
+}
+
+.actions:hover{
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.actions a{
+    color:  rgb(83, 100, 113);
+    background-color: transparent;
+    text-decoration: none;
+}
+a.reshare:hover, a.reshare:focus{
+    background-color: rgba(29, 155, 240, 0.1);
+    color:  rgba(29, 155, 240, 1);
+    border-radius: 10px;
+}
+
+a.retz:hover, a.retz:focus{
+    background-color: rgba(0, 186, 124, 0.1);
+    color: rgba(0, 186, 124, 1);
+    border-radius: 10px;
+}
+
+a.like:hover, a.like:focus{
+    background-color: rgba(249, 24, 128, 0.1);
+    color: rgba(249, 24, 128, 1);
+    border-radius: 10px;
+}
+
+.userdate{
+    color: rgb(83, 100, 113);
+}
