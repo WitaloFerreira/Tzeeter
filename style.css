@@ -1,16 +1,66 @@
 body{
     color:  rgb(15, 20, 25);
-    background-color: white;    
+    background-color: white;
 }
+
+main{
+    display: flex;
+    gap: 15px;
+    height: 100vh;
+}
+
+.container-coluna1{
+    padding-left: 5px;
+    max-width: 300px;
+}
+
+.container-coluna2{
+    border-left: 1px solid rgb(209, 206, 206);
+    border-right: 1px solid rgb(209, 206, 206);
+    position: relative;
+    flex: 1;
+    padding: 0px;
+}
+
+.container-coluna2 button{
+    position: absolute;
+    right: 40px;
+    top: 70px;
+}
+
+.container-coluna3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    border: none;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: #8539f4;
+    width: 75px;
+    height: 28px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
 
 .nav{
     width: 200px;
     list-style-type: none;
-    padding: 10px;
+    padding: 0px;
+}
+
+nav button{
+    margin-top: 10px;
+    width: 130px;
 }
 
 .nav a{
     padding: 5px;
+    margin-bottom: 15px;
     display: block;
     color: rgb(15, 20, 25);
     text-decoration: none;
@@ -22,24 +72,67 @@ body{
     border-radius: 10px;
 }
 
-.estatis{
-    margin-left: 20px;
+.icon-responsivo{
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+
+    .container-coluna1{
+        max-width: 55px;
+    }
+
+    .container-coluna2{
+        align-items: center;
+        max-width: 690px;
+    }
+
+    .container-coluna3{
+        display: none;
+    }
+
+    .responsivo{
+        display: none;
+    }
+    .icon-responsivo{
+        display: unset;
+    }
+
+    .nav{
+        width: 35px;
+    }
+
+    .nav button{
+        width: 40px;
+    }
+    .actions{
+        margin-left: 10px;
+    }
 }
 
 .publi{
+    display: flex;
+    justify-content: space-between;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid rgb(209, 206, 206);
 }
 
 .publi a{
-    padding: 5px;
+    flex: 1;
+    text-align: center;
+    padding: 15px ;
     color: rgb(15, 20, 25);
     text-decoration: none;
 }
 
 .publi a:hover, .publi a:focus{
-    background-color: rgba(15, 25, 20, 0.1);
+    background-color: rgba(0, 0, 0, 0.03);
     border-radius: 10px;
+}
+
+.estatis{
+    margin-left: 20px;
 }
 
 .estatis a > .text{
@@ -52,7 +145,7 @@ body{
 }
 
 .estatis a{
-    margin: 5px;
+    margin: 10  px;
     text-decoration: none;
 }
 .estatis a:hover, .estatis a:focus{
@@ -60,7 +153,13 @@ body{
 }
 
 .actions{
+    border-bottom: 1px solid rgb(209, 206, 206);
     padding: 10px;
+}
+
+.actions .area-link{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .actions:hover{
@@ -72,24 +171,72 @@ body{
     background-color: transparent;
     text-decoration: none;
 }
-a.reshare:hover, a.reshare:focus{
+
+.actions i{
+    padding: 10px;
+}
+
+.actions a:hover i{
     background-color: rgba(29, 155, 240, 0.1);
-    color:  rgba(29, 155, 240, 1);
+    border-radius: 15px;
+}
+a.reshare:hover, a.reshare:focus{
+    color:  rgba(133, 57, 244, 1);
     border-radius: 10px;
 }
 
 a.retz:hover, a.retz:focus{
-    background-color: rgba(0, 186, 124, 0.1);
     color: rgba(0, 186, 124, 1);
     border-radius: 10px;
 }
 
 a.like:hover, a.like:focus{
-    background-color: rgba(249, 24, 128, 0.1);
     color: rgba(249, 24, 128, 1);
     border-radius: 10px;
 }
 
 .userdate{
     color: rgb(83, 100, 113);
+}
+
+.busca-container{
+    display: flex;
+    align-items: center;
+    background-color:  rgb(239, 243, 244);
+    border-radius: 15px ;
+    width: 250px;
+    margin: 20px;
+}
+
+.busca-container i{
+    padding-left: 15px;
+}
+
+input{
+    all: unset;
+}
+
+.busca {
+    padding: 10px;
+    background-color:  rgb(239, 243, 244);
+    border-radius: 15px ;
+}
+
+.sugestoes-container{
+    width: 240px;
+    background-color:  rgb(239, 243, 244);
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.sugestoes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.sugestoes-container a{
+    color: #8539f4;
 }
