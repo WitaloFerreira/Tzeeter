@@ -34,7 +34,7 @@ main{
     align-items: center;
 }
 
-button{
+button, #send, .sendModal{
     border: none;
     text-align: center;
     padding: 5px;
@@ -76,38 +76,9 @@ nav button{
     display: none;
 }
 
-@media screen and (max-width: 767px) {
-
-    .container-coluna1{
-        max-width: 55px;
-    }
-
-    .container-coluna2{
-        align-items: center;
-        max-width: 690px;
-    }
-
-    .container-coluna3{
-        display: none;
-    }
-
-    .responsivo{
-        display: none;
-    }
-    .icon-responsivo{
-        display: unset;
-    }
-
-    .nav{
-        width: 35px;
-    }
-
-    .nav button{
-        width: 40px;
-    }
-    .actions{
-        margin-left: 10px;
-    }
+.img-profile{
+    width: 64px;
+    height: 64px;
 }
 
 .publi{
@@ -135,7 +106,7 @@ nav button{
     margin-left: 20px;
 }
 
-.estatis a > .text{
+.estatis a > .text, .estatis a{
     color: rgb(83, 100, 113);
 }
 
@@ -239,4 +210,140 @@ input{
 
 .sugestoes-container a{
     color: #8539f4;
+}
+
+
+
+.container-coluna2 h2{
+    margin: 12px;
+}
+
+.tzeet-area{
+    display: flex;
+    margin: 10px;
+}
+
+.tzeet-area form{
+    width: 100%;
+}
+
+.tzeet-area div{
+    margin-left: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.reply-config a, .replay-config i, #new-tz a {
+    color: #8539f4;
+    padding: 5px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.reply-config a:hover, .multimedia a:hover, #new-tz a:hover{
+    text-decoration: none;
+    background-color: rgba(133, 57, 244, 0.1)
+}
+
+.tzeet-area textarea{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 100%;
+    border: none;
+    resize: none;
+}
+
+.multimedia{
+    display: flex;
+    max-width: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.multimedia a, .multimedia a:visited, #new-tz a:visited{
+    color: rgb(83, 100, 113);
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.status-envio{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container-multi{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.separador{
+    width: 2px;
+    height: 20px;
+    border-right: 3px solid rgb(209, 206, 206);
+}
+
+#send{
+    padding: 2px;
+}
+
+#close-modal{
+    color: rgb(83, 100, 113);
+    background-color: white;
+    font-size: 1.5em;
+}
+
+dialog{
+    border-radius: 15px;
+    border: 1px solid grey;
+}
+
+.hidden{
+    display: none;
+}
+
+.contador-yellow{
+    color: rgb(255, 200, 0);
+}
+
+.contador-red{
+    color:  rgb(255, 0, 0);
+}
+
+@media screen and (max-width: 767px) {
+
+    .container-coluna1{
+        max-width: 55px;
+    }
+
+    .container-coluna2{
+        align-items: center;
+        max-width: 690px;
+    }
+
+    .container-coluna3{
+        display: none;
+    }
+
+    .responsivo{
+        display: none;
+    }
+    .icon-responsivo{
+        display: unset;
+    }
+
+    .nav{
+        width: 35px;
+    }
+
+    .nav button{
+        width: 40px;
+    }
+    .actions{
+        margin-left: 10px;
+    }
+    
 }
